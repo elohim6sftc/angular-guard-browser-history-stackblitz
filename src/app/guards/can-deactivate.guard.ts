@@ -13,6 +13,7 @@ export class CanDeactivateGuard
   implements CanDeactivate<CanComponentDeactivate>
 {
   canDeactivate(component: CanComponentDeactivate) {
+    console.log('Guard called!');
     return component.canDeactivate ? component.canDeactivate() : true;
   }
 }
