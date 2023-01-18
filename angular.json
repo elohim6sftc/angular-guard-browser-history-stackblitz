@@ -17,7 +17,13 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "assets": [],
-            "styles": ["src/global_styles.css"],
+            "styles": [
+              {
+                "input": "@angular/material/prebuilt-themes/indigo-pink.css",
+                "inject": true
+              },
+              "src/global_styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
